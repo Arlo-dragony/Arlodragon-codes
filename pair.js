@@ -50,9 +50,9 @@ router.get('/', async (req, res) => {
                     lastDisconnect
                 } = s;
                 if (connection == "open") {
-                await delay(5000);
+                await delay(50000);
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
-                await delay(800);
+                await delay(8000);
                 await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id, { text: `🪀Support/Contact Developer
 
 
